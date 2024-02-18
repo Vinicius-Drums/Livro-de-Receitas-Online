@@ -1,0 +1,66 @@
+/* Estilo específico para o card de adicionar receitas no popup/modal */
+.popup-card.adicionar-receitas {
+    max-width: 400px;
+    height: auto; /* Adicione esta linha para tornar a altura automática */
+    text-align: left;
+    background-color: #eee20a;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 50px auto; /* Centraliza o card verticalmente na tela */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo da imagem dentro do card de adicionar receitas no popup/modal */
+.popup-card.adicionar-receitas img {
+    max-width: 100%;
+    max-height: 100px; /* Defina a altura máxima desejada para a imagem */
+    margin: 10px auto; /* Centraliza a imagem horizontalmente */
+    display: block;
+}
+
+/* Estilo dos rótulos dentro do card de adicionar receitas no popup/modal */
+.popup-card.adicionar-receitas label {
+    width: 100%;
+    margin-bottom: 5px; /* Reduz a margem inferior entre os rótulos */
+}
+
+/* Estilo dos checkboxes dentro do card de adicionar receitas no popup/modal */
+.popup-card.adicionar-receitas .restricoes-inputs {
+    display: flex;
+    gap: 5px; /* Reduz o espaço entre as caixas de seleção */
+    margin-top: 5px;
+}
+
+/* Estilo do container dos botões dentro do card de adicionar receitas no popup/modal */
+.popup-card.adicionar-receitas .buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px; /* Reduz a margem superior entre os botões e o conteúdo */
+}
+
+/* Estilo dos botões dentro do card de adicionar receitas no popup/modal */
+.popup-card.adicionar-receitas button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px; /* Reduz o tamanho do botão */
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 1;
+}
+
+/* Estilo do segundo botão dentro do card de adicionar receitas no popup/modal */
+.popup-card.adicionar-receitas button + button {
+    margin-left: 5px; /* Reduz o espaço entre os botões */
+}
+
+/* Estilos específicos para telas maiores, se necessário */
+@media (min-width: 600px) {
+    .popup-card.adicionar-receitas {
+        max-width: 600px; /* Ajuste conforme necessário para telas maiores */
+    }
+}

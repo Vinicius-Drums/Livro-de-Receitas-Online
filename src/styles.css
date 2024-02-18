@@ -1,0 +1,141 @@
+/* styles.css */
+
+/* Estilo global para o corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('./Imagens/Fundovegetais.jpg'); /* Caminho para a imagem de fundo */
+  background-size: cover; /* Garante que a imagem cubra todo o fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-position: center center; /* Centraliza a imagem no centro do fundo */
+  background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+}
+
+/* Estilo do cabeçalho */
+header {
+  color: rgb(10, 1, 1);
+  text-align: center;
+  padding: 1em;
+  font-size: 20px;
+}
+
+/* Estilo do container principal que envolve os cards */
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto; /* Centralizar na tela e adicionar margem superior e inferior */
+  max-width: 1200px; /* Limitar a largura máxima para evitar que fique muito largo */
+}
+
+/* Estilo dos cards de filtro e receitas */
+.filtro-container,
+.receitas-card {
+  width: 48%; /* Definir largura para ocupar quase metade do container */
+  box-sizing: border-box; /* Considerar borda e padding ao calcular a largura total */
+  margin-bottom: 20px; /* Adicionar margem inferior para criar espaçamento */
+}
+
+/* Estilo do botão de filtro para ser centralizado no card de filtro */
+.filtro-button {
+  display: block;
+  margin: 0 auto; /* Centralizar o botão */
+}
+
+/* Estilo do card de popup/modal */
+.popup-card {
+  background-color: #eee20a;
+  border: 2px solid black;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  text-align: center;
+  max-width: 80%; /* Defina a largura máxima conforme necessário */
+  width: 100%; /* Faz com que a largura se ajuste ao conteúdo */
+}
+
+/* Estilo do título do card de popup/modal */
+.popup-card h2 {
+  margin-bottom: 20px;
+}
+
+/* Estilo dos rótulos e inputs no card de popup/modal */
+.popup-card label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+/* Estilo dos checkboxes no card de popup/modal */
+.popup-card .restricoes-inputs {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+/* Estilo geral para inputs, textareas e selects no card de popup/modal */
+.popup-card input,
+.popup-card textarea,
+.popup-card select {
+  width: calc(100% - 20px); /* Ajuste para levar em conta o padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+/* Estilo do container dos botões no card de popup/modal */
+.popup-card .buttons-container {
+  display: flex;
+  justify-content: space-around; /* Alinhar os botões ao redor */
+  margin-top: 20px; /* Aumentar a margem superior */
+}
+
+/* Estilo dos botões no card de popup/modal */
+.popup-card button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  flex: 1; /* Fazer os botões ocuparem a mesma largura */
+  margin: 0 5px; /* Adicionar espaçamento entre os botões */
+}
+
+/* Estilo do segundo botão no card de popup/modal */
+.popup-card button + button {
+  margin-left: 10px;
+}
+
+/* Estilo para a imagem no card de popup/modal */
+.popup-card img {
+  max-width: 100%; /* Fazer a imagem ocupar 100% da largura do container */
+  margin: 10px 0; /* Adiciona margem acima e abaixo da imagem */
+}
+
+/* Estilo do botão de adicionar receita flutuante */
+.adicionar-receita-btn {
+  position: fixed;
+  bottom: 20px; /* Ajuste conforme necessário para a distância do fundo */
+  right: 20px; /* Ajuste conforme necessário para a distância da direita */
+  background-color: #333; /* Cor de fundo desejada */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do botão de adicionar receita flutuante ao passar o mouse */
+.adicionar-receita-btn:hover {
+  background-color: #555; /* Cor de fundo desejada ao passar o mouse */
+}

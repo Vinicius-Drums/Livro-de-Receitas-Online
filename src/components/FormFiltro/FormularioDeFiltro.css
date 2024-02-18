@@ -1,0 +1,31 @@
+/* components/FormFiltro/FormularioDeFiltro.css */
+
+/* Estilo para o container do formulário de filtro */
+.filtro-container {
+  background-color: #eee20a;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column; /* Alterado para um layout de coluna para melhor controle do posicionamento */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Adicionado espaço entre os checkboxes e o botão */
+label {
+  margin-bottom: 10px;
+}
+
+/* Estilo ajustado para o botão "Filtrar" */
+.filtro-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  align-self: flex-end; /* Alinha o botão à direita do card de filtro */
+}

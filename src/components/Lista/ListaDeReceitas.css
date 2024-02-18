@@ -1,0 +1,53 @@
+/* components/Lista/ListaDeReceitas.css */
+
+/* Estilo do card que contém a lista de receitas */
+.receitas-card {
+  background-color: #eee20a;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilo da lista de receitas */
+.lista-receitas {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo do card individual de cada receita na lista */
+.receita-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Estilo do título que indica a lista de receitas */
+.titulo-receitas {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Estilo do ícone de panela usado em cada receita */
+.pot-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Estilo do nome da receita na lista */
+.receita-nome {
+  margin-right: 5px;
+  font-weight: bold; /* Adiciona negrito ao nome da receita */
+}
+
+/* Estilo do botão de ações em cada receita na lista */
+.botao-acoes {
+  border-radius: 50%;
+  margin-left: 10px;
+  align-self: flex-start;
+  margin-left: 10px;
+}
